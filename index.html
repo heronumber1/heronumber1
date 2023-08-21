@@ -13,6 +13,9 @@
         .hero {
             padding-top: 50px;
             padding-bottom: 50px;
+            margin-top: 20px;
+            .container {
+    margin: 0 20px; 
         }
 
         .card {
@@ -26,89 +29,74 @@
         .card:hover {
             transform: scale(1.05);
         }
+        .card-body {
+    height: 160px; /* Set the desired fixed height for card content */
+}
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .col-md-4 {
+            flex: 0 0 calc(33.333% - 20px);
+        }
     </style>
 </head>
 
 <body>
     <div class="hero bg-dark text-center">
-        <h1 class="text-white">나만의 르탄마켓</h1>
+        <h1 class="text-white">다있소 중고마켓</h1>
         <h2 class="text-white">집에 있는 물건을 팝니다!</h2>
     </div>
     <div class="container mt-5">
-        <div class="row">
-            <!-- 인덕션 카드 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="인덕션.jpg" class="card-img-top" alt="인덕션 이미지" />
-                    <div class="card-body">
-                        <h5 class="card-title">인덕션</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
-                        <p class="card-text">
-                            2017년 모델의 인덕션 판매합니다. 사용감 있습니다.
-                        </p>
-                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
-                            rel="noopener noreferrer">
-                            상세 정보 보기
-                        </a>
-                    </div>
+        <div class="row card-container">
+            <!-- 인덕션 카드 -->            
+<div class="col-md-4">
+    <div class="card">
+        <img src="인덕션.jpg" class="card-img-top" alt="인덕션 이미지" />
+        <div class="card-body">
+            <h5 class="card-title">인덕션</h5>
+            <h6 class="card-subtitle mb-2 text-muted">200만원</h6>
+            <p class="card-text">
+                2023년 모델의 인덕션 판매합니다
+            <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+                상세 정보 보기
+            </a>
+        </div>
                 </div>
             </div>
-            <!-- 냄비 카드 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                        class="card-img-top" alt="냄비 이미지" />
-                    <div class="card-body">
-                        <h5 class="card-title">냄비</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
-                        <p class="card-text">
-                            한 번 밖에 안 쓴 냄비 팝니다. 부모님이 독립할 때 주신 거에요!
-                        </p>
-                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
-                            rel="noopener noreferrer">
-                            상세 정보 보기
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- 전기밥솥 카드 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUIwJUE1JUVDJTg2JUE1fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                        class="card-img-top" alt="전기밥솥 이미지" />
-                    <div class="card-body">
-                        <h5 class="card-title">전기밥솥</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">8만원</h6>
-                        <p class="card-text">
-                            거의 사용하지 않은 전기밥솥 팝니다. 상태 양호합니다.
-                        </p>
-                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
-                            rel="noopener noreferrer">
-                            상세 정보 보기
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- 주전자 카드 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1622088934558-b729cf3c8cf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUFDJUJDJTIwJUVDJUEzJUJDJUVDJUEwJTg0JUVDJTlFJTkwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                        class="card-img-top" alt="주전자 이미지" />
-                    <div class="card-body">
-                        <h5 class="card-title">주전자</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
-                        <p class="card-text">
-                            사용감이 있지만 기능에는 문제 없는 주전자 팝니다.
-                        </p>
-                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
-                            rel="noopener noreferrer">
-                            상세 정보 보기
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- 정수기 카드 -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="정수기.png" class="card-img-top" alt="정수기 이미지" />
+        <div class="card-body">
+            <h5 class="card-title">정수기</h5>
+            <h6 class="card-subtitle mb-2 text-muted">100만원</h6>
+            <p class="card-text">
+                2023년 모델의 정수기 판매합니다.
+            <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+                상세 정보 보기
+            </a>
         </div>
     </div>
+</div>
+            <!-- 안마 카드 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="안마.jpg" class="card-img-top" alt="안마 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">안마의자</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">120만원</h6>
+                        <p class="card-text">
+                            2023년 모델의 안마의자 판매합니다.
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                                    
 </body>
 
 </html>
